@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_plant_own_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    android:paddingStart="5dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="5dp"
+    android:paddingBottom="10dp"
+    tools:ignore="SpUsage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:onClick="plantClick"
+            android:text="京"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:onClick="plantClick"
+            android:text="津"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="渝"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="沪"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="冀"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="晋"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="辽"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="吉"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="黑"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_close_own_dialog"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_dialog_plant_icon"
+            android:padding="8dp"
+            android:src="@drawable/ic_dialog_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="苏"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="浙"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="皖"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="闽"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="赣"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="鲁"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="豫"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="鄂"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="湘"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="粤"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="琼"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="川"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="贵"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="云"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="陕"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="甘"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="青"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="蒙"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="桂"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="宁"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_change_num"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/bg_dialog_plant_icon"
+            android:gravity="center"
+            android:text="ABC"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="新"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="藏"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="使"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="领"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="警"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="学"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="港"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <com.winnie.views.planteditview.view.PlantItemView
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dialog_plant_num"
+            android:gravity="center"
+            android:text="澳"
+            android:textColor="#333333"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_delete_own"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_dialog_plant_icon"
+            android:padding="8dp"
+            android:src="@drawable/ic_dialog_delete" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rg_btn_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:ignore="SpUsage">
+
+    <RadioButton
+        android:id="@+id/rtn_plant_own"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_plant_num"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14dp"
+        tools:text="渝" />
+
+    <RadioButton
+        android:id="@+id/rtn_plant_num1"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_plant_num"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14dp"
+        tools:text="A" />
+
+    <RadioButton
+        android:id="@+id/rtn_plant_num2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_plant_num"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14dp"
+        tools:text="3" />
+
+    <RadioButton
+        android:id="@+id/rtn_plant_num3"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_plant_num"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14dp"
+        tools:text="1" />
+
+    <RadioButton
+        android:id="@+id/rtn_plant_num4"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_plant_num"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14dp"
+        tools:text="7" />
+
+    <RadioButton
+        android:id="@+id/rtn_plant_num5"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_plant_num"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14dp"
+        tools:text="6" />
+
+
+    <RadioButton
+        android:id="@+id/rtn_plant_num6"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/bg_plant_num"
+        android:button="@null"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14dp"
+        tools:text="5" />
+
+    <RadioButton
+        android:id="@+id/rtn_plant_num7"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/bg_plant_new"
+        android:button="@null"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="14dp" />
+</RadioGroup>
