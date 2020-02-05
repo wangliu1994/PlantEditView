@@ -12,8 +12,31 @@
         android:orientation="vertical">
 
         <com.winnie.views.planteditview.view.PlantEditLayoutView
+            android:id="@+id/pv_plant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="您输入车车牌号为："
+            android:textColor="#666666"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_plant_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textColor="#666666"
+            android:textSize="16dp" />
     </LinearLayout>
 
 </ScrollView>

@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 
@@ -27,7 +28,15 @@ public class PlantEditLayoutView extends FrameLayout {
 
     private List<RadioButton> mRtnViewList = new ArrayList<>();
 
+    /**
+     * 车牌号列表
+     */
     private List<String> mPlantNumList = new ArrayList<>();
+
+    /**
+     * 车牌号长度，最多8位
+     */
+    private int mMaxSize = 8;
 
     public PlantEditLayoutView(@NonNull Context context) {
         super(context);
@@ -64,12 +73,14 @@ public class PlantEditLayoutView extends FrameLayout {
         mRtnViewList.add(rtnPlantNum7);
         for (RadioButton x : mRtnViewList) {
             final int index = mRtnViewList.indexOf(x);
-            x.setOnClickListener(new OnClickListener() {
+            x.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
-                public void onClick(View v) {
-                    //TODO 这里的交互有问题，还需要理一理
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (!isChecked) {
+                        return;
+                    }
                     if (index > mPlantNumList.size()) {
-                        mDialog.setCurrentIndex(mPlantNumList.size() -1);
+                        mDialog.setCurrentIndex(mPlantNumList.size() - 1);
                         mDialog.showNumView(mPlantNumList.size() != 0);
                         mDialog.showAtLocation(PlantEditLayoutView.this, Gravity.BOTTOM, 0, 0);
                     } else {
@@ -85,16 +96,18 @@ public class PlantEditLayoutView extends FrameLayout {
         mDialog.setOnPlantChangeListener(new PlantOwnDialog.OnPlantChangeListener() {
             @Override
             public void onAppend(int index, String text) {
-                if (mPlantNumList.size() >= 8) {
-                    return;
-                }
                 mDialog.showNumView(index != 0);
-                if (index == -1) {
+                if (index > mPlantNumList.size() - 1) {
+                    if (mPlantNumList.size() >= mMaxSize) {
+                        return;
+                    }
+                    //新增的车牌号
                     mPlantNumList.add(text);
                 } else {
+                    //修改车牌号的某一位
                     mPlantNumList.set(index, text);
                 }
-                updatePlant();
+                updatePlant(index);
             }
 
             @Override
@@ -102,30 +115,35 @@ public class PlantEditLayoutView extends FrameLayout {
                 if (mPlantNumList.isEmpty()) {
                     return;
                 }
-                mPlantNumList = mPlantNumList.subList(0, mPlantNumList.size() - 1);
-                updatePlant();
+                int index = mPlantNumList.size() - 1;
+                mPlantNumList = mPlantNumList.subList(0, index);
+                updatePlant(index - 1);
             }
         });
     }
 
-    private void updatePlant() {
-        int currentIndex;
-        if (mPlantNumList.isEmpty()) {
-            currentIndex = -1;
-        } else {
-            currentIndex = mPlantNumList.size() - 1;
-        }
-        if (currentIndex + 1 < mRtnViewList.size()) {
-            mRtnViewList.get(currentIndex + 1).setChecked(true);
+    private void updatePlant(int oldIndex) {
+        if (oldIndex + 1 < mRtnViewList.size()) {
+            mRtnViewList.get(oldIndex + 1).setChecked(true);
         }
 
         for (RadioButton x : mRtnViewList) {
             int index = mRtnViewList.indexOf(x);
             if (index < mPlantNumList.size()) {
                 x.setText(String.valueOf(mPlantNumList.get(index)));
+                x.setSelected(true);
             } else {
                 x.setText("");
+                x.setSelected(false);
             }
         }
+    }
+
+    public String getPlantNum() {
+        StringBuilder plantNum = new StringBuilder();
+        for (String x : mPlantNumList) {
+            plantNum.append(x);
+        }
+        return plantNum.toString();
     }
 }

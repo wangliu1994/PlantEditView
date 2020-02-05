@@ -25,8 +25,7 @@ public class PlantOwnDialog extends PopupWindow {
 
     private OnPlantChangeListener mOnPlantChangeListener;
 
-    private int mCurrentIndex = -1;
-    private boolean mShowNumView = false;
+    private int mCurrentIndex = 0;
 
     public PlantOwnDialog(@NonNull Context context) {
         super(context);
@@ -112,10 +111,12 @@ public class PlantOwnDialog extends PopupWindow {
 
     public void setCurrentIndex(int currentIndex) {
         this.mCurrentIndex = currentIndex;
+        if(mCurrentIndex == -1){
+            mCurrentIndex = 0;
+        }
     }
 
     public void showNumView(boolean showNumView) {
-        this.mShowNumView = showNumView;
         if(showNumView){
             mPlantOwnView.setVisibility(View.GONE);
             mPlantNumView.setVisibility(View.VISIBLE);
